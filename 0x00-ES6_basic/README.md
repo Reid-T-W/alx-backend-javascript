@@ -10,5 +10,7 @@ Rewrote the add function to use ES6's arrow syntax
 Condenced the internals of the getSumOfHoods function to one line 
 ## Task 4. Rest parameter syntax for functions
 Modifyed the function to return the number of arguments passsed to it using the rest parameter syntax
-## Task 5.  
-Concatenated 2 arrays and characters of a string using the spread operator  
+## Task 5. The wonders of spread syntax 
+Concatenates 2 arrays and characters of a string using the spread operator  
+## Task 6. Take advantage of template literals
+Template literals are used to rewirte return statement   
