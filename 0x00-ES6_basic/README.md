@@ -19,4 +19,6 @@ Uses keyname as value
 ## Task 8. No need to create empty objects before adding in properties
 Uses ES6 computed property names to define properties of an object 
 ## Task 9. ES6 method properties
-Modifies the getFullBudgetObject function to use ES6 method properties  
+Modifies the getFullBudgetObject function to use ES6 method properties 
+## Task 10. For...of Loops
+The function appendToEachArrayValue is modified to use ES6’s for...of  
