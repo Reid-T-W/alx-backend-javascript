@@ -23,4 +23,6 @@ Modifies the getFullBudgetObject function to use ES6 method properties
 ## Task 10. For...of Loops
 The function appendToEachArrayValue is modified to use ES6’s for...of 
 ## Task 11. Iterator
-Returns an object created from parameters   
+Returns an object created from parameters  
+## Task 12. Let's create a report object
+A function that returns an object conataining a data on all departments and a list of employees in that department.  
