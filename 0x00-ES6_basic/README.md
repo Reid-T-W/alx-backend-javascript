@@ -25,4 +25,6 @@ The function appendToEachArrayValue is modified to use ES6’s for...of
 ## Task 11. Iterator
 Returns an object created from parameters  
 ## Task 12. Let's create a report object
-A function that returns an object conataining a data on all departments and a list of employees in that department.  
+A function that returns an object conataining a data on all departments and a list of employees in that department. 
+## Task 13. Iterating through report objects
+Returns an iteratable that goes through every employee in every department   
