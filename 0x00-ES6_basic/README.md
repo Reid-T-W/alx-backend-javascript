@@ -21,4 +21,6 @@ Uses ES6 computed property names to define properties of an object
 ## Task 9. ES6 method properties
 Modifies the getFullBudgetObject function to use ES6 method properties 
 ## Task 10. For...of Loops
-The function appendToEachArrayValue is modified to use ES6’s for...of  
+The function appendToEachArrayValue is modified to use ES6’s for...of 
+## Task 11. Iterator
+Returns an object created from parameters   
