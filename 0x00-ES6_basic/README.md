@@ -13,4 +13,8 @@ Modifyed the function to return the number of arguments passsed to it using the 
 ## Task 5. The wonders of spread syntax 
 Concatenates 2 arrays and characters of a string using the spread operator  
 ## Task 6. Take advantage of template literals
-Template literals are used to rewirte return statement   
+Template literals are used to rewirte return statement  
+## Task 7. Object property value shorthand syntax
+Uses keyname as value  
+## Task 8. No need to create empty objects before adding in properties
+Uses ES6 computed property names to define properties of an object  
