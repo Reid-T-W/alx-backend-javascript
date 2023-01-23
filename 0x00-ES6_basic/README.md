@@ -17,4 +17,6 @@ Template literals are used to rewirte return statement
 ## Task 7. Object property value shorthand syntax
 Uses keyname as value  
 ## Task 8. No need to create empty objects before adding in properties
-Uses ES6 computed property names to define properties of an object  
+Uses ES6 computed property names to define properties of an object 
+## Task 9. ES6 method properties
+Modifies the getFullBudgetObject function to use ES6 method properties  
