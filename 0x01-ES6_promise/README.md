@@ -6,4 +6,6 @@ Returns a promise handling both resolve and reject, based on the params value
 ## 2. Catch me if you can!
 ## 3. Handle multiple successful promises
 ## 4. Simple promise
-A function that returns a resolved promise   
+A function that returns a resolved promise  
+## 5. Reject the promises
+A function that returns a rejected promise   
