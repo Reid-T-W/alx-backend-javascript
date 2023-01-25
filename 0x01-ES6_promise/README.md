@@ -16,4 +16,6 @@ A function that returns a rejected promise
 ## 8. Throw error / try catch
 A function that throws an error  
 ## 9. Throw an error
-Executes a function using try catch  
+Executes a function using try catch 
+## 10. Await / Async
+Uses await and async to handle a promise   
