@@ -3,11 +3,11 @@ export default class HolbertonCourse {
     if (typeof name === 'string') {
       this._name = name;
     } else {
-      return new Error('Name must be a string');
+      throw new Error('TypeError: Name must be a string');
     } if (typeof length === 'number') {
       this._length = length;
     } else {
-      return Error('Length must be a number');
+      throw new Error('TypeError: Length must be a number');
     } if (Array.isArray(students)) {
       let allString = true;
       for (const student of students) {
@@ -18,10 +18,10 @@ export default class HolbertonCourse {
       if (allString === true) {
         this._students = students;
       } else {
-        return Error('Students must be array of strings');
+        throw new Error('TypeError: Students must be array of strings');
       }
     } else {
-      return Error('Students must be array of strings');
+      throw new Error('TypeError: Students must be array of strings');
     }
   }
 
@@ -42,16 +42,38 @@ export default class HolbertonCourse {
 
   // Setter method for _name
   set name(name) {
-    this._name = name;
+    if (typeof name === 'string') {
+      this._name = name;
+    } else {
+      throw new Error('TypeError: Name must be a string');
+    }
   }
 
   // Setter method for _length
   set length(length) {
-    this._length = length;
+    if (typeof length === 'number') {
+      this._length = length;
+    } else {
+      throw new Error('TypeError: Length must be a number');
+    }
   }
 
   // Setter method for _students
   set students(students) {
-    this._students = students;
+    if (Array.isArray(students)) {
+      let allString = true;
+      for (const student of students) {
+        if (typeof student !== 'string') {
+          allString = false;
+        }
+      }
+      if (allString === true) {
+        this._students = students;
+      } else {
+        throw new Error('TypeError: Students must be array of strings');
+      }
+    } else {
+      throw new Error('TypeError: Students must be array of strings');
+    }
   }
 }
