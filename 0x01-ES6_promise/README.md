@@ -11,3 +11,7 @@ Collectively resolves all promises
 A function that returns a resolved promise  
 ## 5. Reject the promises
 A function that returns a rejected promise   
+## 6. Handle multiple promises
+## 7. Load balancer
+## 8. Throw error / try catch
+A function that throws an error  
