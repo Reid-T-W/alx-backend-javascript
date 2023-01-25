@@ -15,3 +15,5 @@ A function that returns a rejected promise
 ## 7. Load balancer
 ## 8. Throw error / try catch
 A function that throws an error  
+## 9. Throw an error
+Executes a function using try catch  
