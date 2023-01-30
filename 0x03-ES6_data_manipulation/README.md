@@ -8,4 +8,6 @@ Array of objects filtered by location.
 ## 3. Reduce
 Function that returns the sum of all the students ids.  
 ## 4. Combine
-Function that returns an array of students for a specific city with their new grade.   
+Function that returns an array of students for a specific city with their new grade.  
+## 5. Typed Arrays  
+Functions that returns a new ArrayBuffer.  
