@@ -1,6 +1,6 @@
 export default function cleanSet(set, startString) {
   let newString = '';
-  set.forEach((x) => {
+  /* set.forEach((x) => {
     if (startString === '') {
       newString = `${newString}`;
     } else if (x.includes(startString)) {
@@ -13,6 +13,6 @@ export default function cleanSet(set, startString) {
     } else {
       newString = `${newString}`;
     }
-  });
+  });*/
   return newString;
 }
