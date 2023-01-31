@@ -2,11 +2,10 @@ export default function cleanSet(set, startString) {
   let newString = '';
   if (startString === '') {
     newString = `${newString}`;
+    return newString;
   }
-  /* set.forEach((x) => {
-    if (startString === '') {
-      newString = `${newString}`;
-    } else if (x.includes(startString)) {
+  set.forEach((x) => {
+    if (x.includes(startString)) {
       const cleanedString = x.replace(startString, '');
       if (newString === '') {
         newString = `${cleanedString}`;
@@ -16,6 +15,6 @@ export default function cleanSet(set, startString) {
     } else {
       newString = `${newString}`;
     }
-  }); */
+  });
   return newString;
 }
