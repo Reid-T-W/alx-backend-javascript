@@ -12,8 +12,6 @@ export default function cleanSet(set, startString) {
       } else {
         newString = `${newString}-${cleanedString}`;
       }
-    } else {
-      newString = `${newString}`;
     }
   });
   return newString;
