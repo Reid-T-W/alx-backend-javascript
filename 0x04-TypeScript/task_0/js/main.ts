@@ -21,19 +21,21 @@ const student2: Student = {
 
 const studentList = [student1, student2];
 
-  function generateTable(table, data) {
-    for (let element of data) {
-        let row = table.insertRow();
-        for (let value of Object.values(element)) {
-            let cell = row.insertCell();
-            let text = document.createTextNode(value);
-            cell.appendChild(text);
-        }
+function generateTable(table: any, data: any) {
+  for (let element of data) {
+    let row = table.insertRow();
+    let key: string;
+    let keys: Array<string> = Object.keys(element);
+    for (key of keys) {
+      let cell = row.insertCell();
+      if (key !== 'lastName' && key !== 'age') {
+        let text = document.createTextNode(element[key]);
+        cell.appendChild(text);
+      }
     }
   }
-  
-  let table = document.createElement('table');
-  document.body.appendChild(table);
-  data = Object.keys(studentList[0]);
-  generateTable(table, studentList);
-  generateTableHead(table, data);
+}
+
+let table = document.createElement('table');
+document.body.appendChild(table);
+generateTable(table, studentList);
