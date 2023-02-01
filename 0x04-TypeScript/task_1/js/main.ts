@@ -1,3 +1,7 @@
+// ---------------------------------------
+// Task 1
+// ---------------------------------------
+
 interface Teacher { 
   [key: string]: any;
   readonly firstName: string;
@@ -17,6 +21,10 @@ const teacher3: Teacher = {
 
 console.log(teacher3);
 
+// ---------------------------------------
+// Task 2
+// ---------------------------------------
+
 interface Directors extends Teacher {
   numberOfReports: number;
 }
@@ -29,6 +37,9 @@ const director1: Directors = {
 };
 console.log(director1);
 
+// ---------------------------------------
+// Task 3
+// ---------------------------------------
 
 interface printTeacherFunction {
   firstName: string;
@@ -41,3 +52,32 @@ function printTeacher(firstName: string, lastName: string): string {
 }
 
 console.log(printTeacher("John", "Doe"));
+
+// ---------------------------------------
+// Task 4
+// ---------------------------------------
+class StudentClass implements StudentClassInterface {
+  firstName: string;
+  lastName: string;
+  constructor(firstName: string, lastName: string): StudentClass {
+    this.firstName = firstName;
+    this.lastName = lastName;
+  }
+
+  workOnHomework(): string {
+    return 'Currently working';
+  }
+
+  displayName() {
+    return this.firstName;
+  }
+}
+
+export interface StudentClassInterface {
+  workOnHomework(): string;
+  displayName(): string;
+}
+
+export interface constructorInterface {
+  new(firstName: string, lastName: string): StudentClassInterface;
+}
