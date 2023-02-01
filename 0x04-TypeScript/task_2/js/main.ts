@@ -1,3 +1,6 @@
+// -------------------------------------
+// Task 5
+// -------------------------------------
 interface DirectorInterface {
   workFromHome(): string;
   getCoffeeBreak(): string;
@@ -48,3 +51,21 @@ function createEmployee(salary: number | string): DirectorInterface | TeacherInt
 console.log(createEmployee(200));
 console.log(createEmployee(1000));
 console.log(createEmployee('$500'));
+
+// -------------------------------------
+// Task 6
+// -------------------------------------
+function isDirector(employee: DirectorInterface | TeacherInterface): employee is DirectorInterface {
+   return (employee as DirectorInterface).workDirectorTasks !== undefined;
+}
+
+function executeWork (employee: DirectorInterface | TeacherInterface) {
+  if (isDirector(employee)) {
+    console.log(employee.workDirectorTasks());
+  } else {
+    console.log(employee.workTeacherTasks());
+  }
+}
+
+executeWork(createEmployee(200));
+executeWork(createEmployee(1000));
