@@ -1,4 +1,3 @@
-const displayMessage = (msg) => {
+export default function displayMessage(msg) {
   process.stdout.write(`${msg}\n`);
-};
-module.exports = displayMessage;
+}
