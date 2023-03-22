@@ -21,7 +21,11 @@ function countStudents(path) {
     console.log(`Number of students: ${filterdStudents.length}`);
     for (const key of fields.keys()) {
       const value = fields.get(key);
-      console.log(`Number of students in ${key}: ${value.length}. List: ${value}`);
+      let printValue = '';
+      for (const val of value) {
+        printValue += `${val}, `;
+      }
+      console.log(`Number of students in ${key}: ${value.length}. List: ${printValue.slice(0, -2)}`);
     }
   } catch (error) {
     throw Error('Cannot load the database');
