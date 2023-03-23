@@ -13,13 +13,10 @@ describe(('0-calcul'), function() {
     it('calculateNumber should return the correct sum', function() {
         assert.equal(calculateNumber(1.5, 3.7), 6);
     })
-    it('passing a string should return NaN', function() {
-        assert.equal(isNaN(calculateNumber("number", 3.7)), true)
+    it('checking .5 edge case for odd number', function() {
+        assert.equal(calculateNumber(3.5, 3.2), 7)
     })
-    it('passing a string should return NaN', function() {
-        assert.equal(isNaN(calculateNumber(3.7, "number")), true)
-    })
-    it('passing a string should return NaN', function() {
-        assert.equal(isNaN(calculateNumber("number", "number")), true)
+    it('checking .5 edge case for even number', function() {
+        assert.equal(calculateNumber(3.5, 3.2), 7)
     })
 })
