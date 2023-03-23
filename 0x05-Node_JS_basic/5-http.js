@@ -13,6 +13,8 @@ const app = http.createServer((req, res) => {
     try {
       fs.readFile(path, { encoding: 'utf-8' }, (err, data) => {
         if (err !== null) {
+          res.writeHead(404);
+          res.end('Cannot load the database');
           throw Error('Cannot load the database');
         }
         const fields = new Map();
