@@ -1,5 +1,5 @@
 const { expect } = require('chai');
-const calculateNumber = require('./1-calcul')
+const calculateNumber = require('./2-calcul_chai')
 describe(('Testing SUM'), function() {
     it('calculateNumber should return the correct sum', function() {
         expect(calculateNumber('SUM', 1, 3)).to.equal(4);
