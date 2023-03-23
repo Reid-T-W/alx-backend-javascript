@@ -1,8 +1,13 @@
+const { rejects } = require('assert');
 const fs = require('fs');
 
 function countStudents(path) {
-  return (new Promise((resolve, reject) => {
+  return (new Promise((resolve) => {
     fs.readFile(path, { encoding: 'utf-8' }, (err, data) => {
+      if (err !== null) {
+        rejects(err);
+        throw Error('Cannot load the database');
+      }
       const fields = new Map();
       const students = data.split('\n');
       const columns = students.map((student) => student.split(','));
@@ -28,7 +33,6 @@ function countStudents(path) {
         console.log(`Number of students in ${key}: ${value.length}. List: ${printValue.slice(0, -2)}`);
       }
       resolve(data);
-      reject(Error('Cannot load the database'));
     });
   })
   );
