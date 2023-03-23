@@ -1,6 +1,4 @@
 const { expect } = require('chai');
-const chai = require('chai');
-const except = chai.expect;
 const calculateNumber = require('./1-calcul')
 describe(('Testing SUM'), function() {
     it('calculateNumber should return the correct sum', function() {
