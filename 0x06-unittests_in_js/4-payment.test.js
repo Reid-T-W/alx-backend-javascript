@@ -10,7 +10,6 @@ describe('Testing sendPaymentRequestToApi',
         var spy_consoleLog;
         beforeEach(function() {
             stub_calculateNumber = sinon.stub(Utils, 'calculateNumber');
-            // stub_calculateNumber.withArgs('SUM', 100, 20).returns(10);
             stub_calculateNumber.returns(10);
             spy_consoleLog = sinon.spy(console, 'log');
         })
@@ -19,12 +18,10 @@ describe('Testing sendPaymentRequestToApi',
             stub_calculateNumber.restore()
         })
     it('checking if the stub is called with the right args', function() {
-        // stub_calculateNumber.withArgs('SUM', 100, 20).returns(10);
         sendPaymentRequestToApi(100, 20)
         assert(stub_calculateNumber.calledWith('SUM', 100, 20))
     })
     it('checking if the logging is correct', function() {
-        // var spy_calculateNumber = sinon.spy(Utils, 'calculateNumber');
         sendPaymentRequestToApi(100, 20)
         assert(spy_consoleLog.calledWith('The total is: 10'))
     })
